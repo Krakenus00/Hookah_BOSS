@@ -17,9 +17,15 @@ apply plugin: 'kotlinx-serialization'
 
 apply from: 'https://raw.githubusercontent.com/thedarkcolour/KotlinForForge/site/thedarkcolour/kotlinforforge/gradle/kff-3.6.0.gradle'
 
-version = '1.0.0'
+def mcver = '1.18.2'
+def major = '1'
+def minor = '0'
+def patch = '0'
+def type = 'alpha'
+
+version = "$mcver-$type-$major.$minor.$patch"
 group = 'com.krakenus00.hookah_boss'
-archivesBaseName = 'hookah_boss'
+archivesBaseName = 'HookahBOSS'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
